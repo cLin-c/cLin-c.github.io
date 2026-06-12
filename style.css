@@ -56,8 +56,8 @@ a:hover { text-decoration: underline; }
   flex-shrink: 0;
 }
 .avatar-img {
-  width: 140px; height: 140px; border-radius: 50%;
-  object-fit: cover; object-position: top center;
+  width: 126px; height: 126px; border-radius: 50%;
+  object-fit: cover; object-position: center 10%;
   box-shadow: var(--shadow-lg);
   border: 4px solid #fff;
   flex-shrink: 0;
