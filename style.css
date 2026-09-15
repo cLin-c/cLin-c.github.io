@@ -163,6 +163,16 @@ a:hover { text-decoration: underline; }
 }
 
 /* ===== PUBLICATIONS ===== */
+.research-video-link { display: block; margin-top: 16px; font-size: 0.88rem; font-weight: 600; }
+.pub-video { margin-top: 24px; max-width: 960px; scroll-margin-top: 84px; }
+.pub-video video {
+  display: block; width: 100%; height: auto; aspect-ratio: 960 / 544;
+  background: #0f172a; border: 1px solid var(--border); border-radius: var(--radius);
+}
+.pub-video figcaption {
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 16px;
+  margin-top: 10px; color: var(--text-light); font-size: 0.82rem;
+}
 .pub-list { margin-top: 36px; display: flex; flex-direction: column; gap: 20px; }
 .pub-item {
   background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius);
