@@ -11,11 +11,12 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+<a class="skip-link" href="#main">跳到正文</a>
 
 <!-- ====== NAV ====== -->
-<nav class="navbar">
+<nav class="navbar" aria-label="主导航">
   <div class="nav-inner">
-    <span class="nav-logo">Chen Changlin · 陈昌林</span>
+    <a class="nav-logo" href="#about">陈昌林<span>CHEN CHANGLIN</span></a>
     <ul class="nav-links">
       <li><a href="#about">关于</a></li>
       <li><a href="#research">研究</a></li>
@@ -29,12 +30,14 @@
 <header class="hero" id="about">
   <div class="hero-inner">
     <div class="hero-avatar">
-      <img src="images/avatar.jpeg" alt="陈昌林" class="avatar-img" />
+      <img src="images/avatar.jpeg" alt="陈昌林" class="avatar-img" width="836" height="1208" fetchpriority="high" />
     </div>
     <div class="hero-text">
+      <p class="eyebrow">ROBOTICS &amp; EMBODIED INTELLIGENCE</p>
       <h1>陈昌林 <span class="en">Chen Changlin</span></h1>
       <p class="subtitle">博士研究生 · 中国科学技术大学</p>
       <p class="subtitle-en">Ph.D. Student · University of Science and Technology of China</p>
+      <p class="hero-intro">主要研究机器人控制、具身智能灵巧操作与多模态感知。</p>
 
       <div class="badges">
         <span class="badge badge-blue">机器人控制</span>
@@ -45,7 +48,7 @@
       </div>
 
       <div class="links">
-        <a class="btn" href="mailto:changlinchen@mial.uctc.edu.cn">✉ 邮箱</a>
+        <a class="btn" href="mailto:changlinchen@mial.uctc.edu.cn">联系我 <span aria-hidden="true">↗</span></a>
         <a class="btn btn-outline" href="https://github.com/cLin-c" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a class="btn btn-outline" href="https://scholar.google.com/citations?user=HjgPyDIAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener noreferrer">Google Scholar</a>
       </div>
@@ -54,29 +57,30 @@
 </header>
 
 <!-- ====== BIO ====== -->
+<main id="main">
 <section class="section" id="bio">
   <div class="container">
-    <h2 class="section-title">个人简介</h2>
+    <div class="section-heading"><h2 class="section-title">个人简介</h2><span class="section-en">ABOUT ME</span></div>
     <div class="bio-grid">
       <div class="bio-card">
-        <h3>🎓 教育背景</h3>
+        <h3>教育背景 <span class="card-caption">EDUCATION</span></h3>
         <ul class="timeline">
           <li>
             <span class="tl-year">2026 — 至今</span>
             <div class="tl-content">
-              <strong>博士研究生</strong> · 中国科学技术大学
+              <strong>博士研究生</strong><span class="tl-school">中国科学技术大学</span>
             </div>
           </li>
           <li>
             <span class="tl-year">2024 — 2026</span>
             <div class="tl-content">
-              <strong>硕士研究生</strong> · 中国科学技术大学
+              <strong>硕士研究生</strong><span class="tl-school">中国科学技术大学</span>
             </div>
           </li>
           <li>
             <span class="tl-year">2020 — 2024</span>
             <div class="tl-content">
-              <strong>本科生</strong> · 合肥工业大学<br/>
+              <strong>本科生</strong><span class="tl-school">合肥工业大学</span>
               <span class="tl-sub">推荐免试研究生（保研）</span>
             </div>
           </li>
@@ -84,7 +88,7 @@
       </div>
 
       <div class="bio-card">
-        <h3>🔬 研究方向</h3>
+        <h3>研究方向 <span class="card-caption">RESEARCH INTERESTS</span></h3>
         <p>主要研究内容：</p>
         <ul class="bullet-list">
           <li>机器人控制</li>
@@ -95,7 +99,7 @@
       </div>
 
       <div class="bio-card">
-        <h3>🌐 学术服务</h3>
+        <h3>学术服务 <span class="card-caption">ACADEMIC SERVICE</span></h3>
         <ul class="bullet-list">
           <li>中国自动化学会 会员</li>
           <li>IEEE 正式会员</li>
@@ -113,18 +117,18 @@
 <!-- ====== RESEARCH ====== -->
 <section class="section section-alt" id="research">
   <div class="container">
-    <h2 class="section-title">核心研究</h2>
+    <div class="section-heading"><h2 class="section-title">核心研究</h2><span class="section-en">RESEARCH</span></div>
     <div class="research-grid">
       <div class="research-card">
-        <div class="rc-icon">✋</div>
+        <div class="rc-icon">01 <span>TACTILE CONTROL</span></div>
         <h3>PECHC</h3>
         <p class="rc-full">Robust Tactile Grasping Stabilization in Vision-Denied Peripersonal Space</p>
         <p>在视觉遮挡近端空间内，利用分布式触觉传感实现鲁棒抓握稳定控制。</p>
         <span class="rc-tag">IJCAI 2026 · CCF-A · 已发表</span>
         <a class="research-video-link" href="#pechc-video">观看演示视频 →</a>
       </div>
-<div class="research-card">
-        <div class="rc-icon">🔗</div>
+      <div class="research-card">
+        <div class="rc-icon">02 <span>MULTIMODAL SENSING</span></div>
         <h3>多模态感知</h3>
         <p class="rc-full">Multimodal Perception</p>
         <p>环境侧多视角感知与本体侧分布式触觉协同，构建精细接触控制底座，实现亚毫米级操作精度。</p>
@@ -137,15 +141,17 @@
 <!-- ====== PUBLICATIONS ====== -->
 <section class="section" id="publications">
   <div class="container">
-    <h2 class="section-title">代表性论文</h2>
+    <div class="section-heading"><h2 class="section-title">代表性论文</h2><span class="section-en">SELECTED PUBLICATIONS</span></div>
     <div class="pub-list">
 
       <div class="pub-item pub-highlight">
+        <div class="pub-details">
         <div class="pub-badge">CCF-A · 已发表</div>
         <p class="pub-title">PECHC: Robust Tactile Grasping Stabilization in Vision-Denied Peripersonal Space</p>
         <p class="pub-authors"><strong>Chen, C.</strong>, et al.</p>
         <p class="pub-venue">IJCAI 2026 · International Joint Conference on Artificial Intelligence</p>
         <div class="pub-tags"><span class="ptag">具身智能</span><span class="ptag">触觉感知</span><span class="ptag">灵巧抓握</span></div>
+        </div>
         <figure class="pub-video" id="pechc-video">
           <video controls playsinline preload="none" poster="images/pechc-video-poster.jpg" width="960" height="544" aria-label="PECHC 代表作演示视频" aria-describedby="pechc-video-caption">
             <source src="videos/pechc-demo.mp4" type="video/mp4" />
@@ -181,38 +187,38 @@
 <!-- ====== CONTACT ====== -->
 <section class="section section-alt" id="contact">
   <div class="container contact-container">
-    <h2 class="section-title">联系方式</h2>
+    <div class="section-heading"><h2 class="section-title">联系方式</h2><span class="section-en">GET IN TOUCH</span></div>
     <div class="contact-grid">
       <div class="contact-card">
-        <span class="contact-icon">📧</span>
+        <span class="contact-icon" aria-hidden="true">@</span>
         <div>
           <p class="contact-label">邮箱</p>
           <a href="mailto:changlinchen@mial.uctc.edu.cn" class="contact-val">changlinchen@mial.uctc.edu.cn</a>
         </div>
       </div>
       <div class="contact-card">
-        <span class="contact-icon">🏫</span>
+        <span class="contact-icon" aria-hidden="true">⌂</span>
         <div>
           <p class="contact-label">单位</p>
           <p class="contact-val">中国科学技术大学</p>
         </div>
       </div>
       <div class="contact-card">
-        <span class="contact-icon">📍</span>
+        <span class="contact-icon" aria-hidden="true">◎</span>
         <div>
           <p class="contact-label">地点</p>
           <p class="contact-val">中国 · 安徽 · 合肥</p>
         </div>
       </div>
       <div class="contact-card">
-        <span class="contact-icon">💻</span>
+        <span class="contact-icon" aria-hidden="true">↗</span>
         <div>
           <p class="contact-label">GitHub</p>
           <a href="https://github.com/cLin-c" class="contact-val" target="_blank" rel="noopener noreferrer">github.com/cLin-c</a>
         </div>
       </div>
       <div class="contact-card">
-        <span class="contact-icon">🎓</span>
+        <span class="contact-icon" aria-hidden="true">↗</span>
         <div>
           <p class="contact-label">Google Scholar</p>
           <a href="https://scholar.google.com/citations?user=HjgPyDIAAAAJ&amp;hl=zh-CN" class="contact-val" target="_blank" rel="noopener noreferrer">Google Scholar 学术主页</a>
@@ -223,21 +229,17 @@
 </section>
 
 <!-- ====== FOOTER ====== -->
+</main>
 <footer class="footer">
   <p>© 2026 陈昌林 · Chen Changlin &nbsp;|&nbsp; 中国科学技术大学</p>
   <p class="footer-sub">Built with ❤ and GitHub Pages</p>
 </footer>
 
 <script>
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', e => {
-      e.preventDefault();
-      document.querySelector(a.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-    });
-  });
-  window.addEventListener('scroll', () => {
-    document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 10);
-  });
+  const nav = document.querySelector('.navbar');
+  const updateNav = () => nav.classList.toggle('scrolled', window.scrollY > 10);
+  window.addEventListener('scroll', updateNav, { passive: true });
+  updateNav();
 </script>
 </body>
 </html>
