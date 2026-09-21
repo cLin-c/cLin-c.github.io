@@ -250,7 +250,8 @@ a:hover { text-decoration: underline; }
 }
 .contact-icon { font-size: 1.8rem; flex-shrink: 0; }
 .contact-label { font-size: 0.78rem; color: var(--text-light); font-weight: 600; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 4px; }
-.contact-val { font-size: 0.9rem; color: var(--text); line-height: 1.5; }
+.contact-card > div { min-width: 0; }
+.contact-val { font-size: 0.9rem; color: var(--text); line-height: 1.5; overflow-wrap: anywhere; }
 
 /* ===== GALLERY ===== */
 .gallery-grid {
